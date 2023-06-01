@@ -1,11 +1,9 @@
 public class IfElse{
 	
-	public static void main(String[] args){
+	
+	public static void ScoreCalculator(int score, int levelCompleted, int bonus){
 		
 		boolean gameOver = true;
-		int score = 800;
-		int levelCompleted = 5;
-		int bonus = 100;
 		
 		int finalScore = score;
 		
@@ -13,6 +11,13 @@ public class IfElse{
 			finalScore += (levelCompleted * bonus);
 			System.out.println("Your final score was " + finalScore);
 		}
+		
+	}
+	
+	public static void main(String[] args){
+		
+		ScoreCalculator(10000, 8, 200);
+		ScoreCalculator(1000, 5, 100);
 		
 	}
 	
